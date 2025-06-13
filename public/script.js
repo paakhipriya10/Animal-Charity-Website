@@ -47,11 +47,20 @@ document.getElementById('donation-form').addEventListener('submit', async (e) =>
 });
 
 function updateProgress() {
+  const percent = (totalRaised / goal) * 100;
+  document.getElementById('progress').style.width = `${Math.min(percent, 100)}%`;
   document.getElementById('total-raised').textContent = totalRaised;
-  document.getElementById('progress').style.width = `${Math.min((totalRaised / goal) * 100, 100)}%`;
 
   const estimatedAnimalsSaved = Math.floor(totalRaised / 3);
   document.getElementById('animals-saved').textContent = estimatedAnimalsSaved;
+
+  // 🎯 Check if donation goal is reached
+  if (totalRaised >= goal && !document.querySelector('.goal-message')) {
+    const msg = document.createElement('p');
+    msg.className = 'goal-message';
+    msg.textContent = "🎉 Donation Goal Achieved! Thank you for your support!";
+    document.querySelector('.donation').appendChild(msg);
+  }
 }
 
 // ✅ Contact form
