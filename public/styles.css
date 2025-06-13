@@ -222,3 +222,24 @@ h2 {
   background-color: #1f3c5d;
   color: white;
 }
+
+.goal-message {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1f3c5d;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in-out;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
