@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal Charity</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Animal Charity</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#cause">Know Our Cause</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ Carousel Section -->
+  <section id="home" class="hero">
+    <div class="carousel">
+      <img src="images/slider1.jpg" alt="Slide 1" class="slide active">
+      <img src="images/slider2.jpg" alt="Slide 2" class="slide">
+      <img src="images/slider3.jpg" alt="Slide 3" class="slide">
+    </div>
+    <div class="hero-content">
+      <h1>Support Animal Welfare</h1>
+      <p>Every rupee helps save a life</p>
+      <a href="#donate" class="cta-button">Donate Now</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are a non-profit organization dedicated to the protection and welfare of animals...</p>
+    <img src="images/about.jpg" alt="Dog in shelter"/>
+  </section>
+
+  <section id="cause" class="cause">
+    <h2>Know Our Cause</h2>
+    <ul>
+      <li>💚 We raise money to protect and preserve endangered animal species.</li>
+      <li>🏞️ Funds are directed toward wildlife sanctuaries and protected forests.</li>
+      <li>🌿 Support is extended to NGOs working on forest animal rescue and protection.</li>
+      <li>🤝 Our charity collaborates with local and global conservation organizations.</li>
+      <li>📈 Donations help fund medical treatment, food, and habitats for at-risk wildlife.</li>
+    </ul>
+  </section>
+
+  <section id="donate" class="donation">
+    <h2>Donate:paakhipriya@upi</h2>
+    <p>Your donations go a long way in helping animals in need.</p>
+    <form id="donation-form">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="number" name="amount" placeholder="Donation Amount (₹)" required min="1" />
+      <button type="submit">Submit</button>
+    </form>
+    <p class="confirmation" id="donation-confirmation" style="display:none;">Donation submitted! 🐾</p>
+    <div class="progress-bar-container">
+      <div id="progress" class="progress-bar"></div>
+    </div>
+    <p class="stats">Total Raised: ₹<span id="total-raised">100000</span></p>
+    <p class="stats">Animals Helped: <span id="animals-saved">30000</span></p>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/img1.jpg" alt="Animal 1"/>
+      <img src="images/img2.jpg" alt="Animal 2"/>
+      <img src="images/img3.jpg" alt="Animal 3"/>
+      <img src="images/img4.jpg" alt="Animal 4"/>
+      <img src="images/img5.jpg" alt="Animal 5"/>
+      <img src="images/img6.jpg" alt="Animal 6"/>
+      <img src="images/img7.jpg" alt="Animal 7"/>
+      <img src="images/img8.jpg" alt="Animal 8"/>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p class="confirmation" id="contact-confirmation" style="display:none;">Message submitted! 📩</p>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Animal Charity | All rights reserved.</p>
+      <p><a href="#home" class="back-to-top">Back to Top</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
