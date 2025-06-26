@@ -4,9 +4,9 @@ A full-stack web application built to promote animal welfare and help raise fund
 
 ---
 
-## Live Demo
+## Demo Video
 
-[Click here to view the live site](https://animal-charity-backend.onrender.com)
+[Click here to view the demo video](https://youtu.be/4afkE_SN-Uk)
 
 ---
 
@@ -42,7 +42,6 @@ The Animal Charity website solves this by offering:
 | Styling         | Google Fonts (Roboto), CSS    |
 | Backend         | Node.js, Express.js           |
 | Database        | MongoDB Atlas (Cloud DB)      |
-| Deployment      | Render                        |
 | Version Control | Git & GitHub                  |
 
 ---
